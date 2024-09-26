@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 30vh auto;
+    border: 5px solid black;
+    width: 300px;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    /* margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; */
+}
+
+.caja-1 {
+    background-color: red;
+}
+
+.caja-2 {
+    background-color: aquamarine;
+}
+
+.caja-3 {
+    background-color: blueviolet;
+}
+
+.caja-4 {
+    background-color: antiquewhite;
+}
+
+.caja-5 {
+    background-color: greenyellow;
+}
+
+.caja-6 {
+    background-color: tomato;
+}
+
+/* El estilo sera aplicado unicamente cuando el ancho de la pantalla sea igual o mayor a 380px */
+/* @media only screen and (min-width: 380px) {
+    .caja-1 {
+        background-color: springgreen;
+    }
+
+    .caja-2 {
+        background-color: yellow;
+    }
+
+    .caja-3 {
+        background-color: violet;
+    }
+} */
+
+@media (width <= 380px){
+    .caja-1 {
+        background-color: springgreen;
+    }
+
+    .caja-2 {
+        background-color: yellow;
+    }
+
+    .caja-3 {
+        background-color: violet;
+    }
+}
+
+
+@media (width >= 600px){
+    .caja-1 {
+        background-color: tomato;
+    }
+
+    .caja-2 {
+        background-color: brown;
+    }
+
+    .caja-3 {
+        background-color: bisque;
+    }
+
+    .caja {
+        height: 200px;
+        width: 300px;
+    }
+
+    .container {
+        /* display: flex; */
+        flex-wrap: wrap;
+        /* position: relative; */
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+    .caja-1 {
+        background-color: tomato;
+    }
+
+    .caja-2 {
+        background-color: brown;
+    }
+
+    .caja-3 {
+        background-color: bisque;
+    }
+} */
